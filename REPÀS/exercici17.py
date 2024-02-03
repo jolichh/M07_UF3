@@ -5,21 +5,18 @@ Es mostra per pantalla carteis.
 '''
 
 valor = input("Escriu una frase >>> ")
-tupla = tuple(valor.split())
-usados = set()
+unics = []
+usats = set()
 
-for i in range(0, len(tupla)):
-    '''
-    resultado = [] # guardar en orden original cara letra
-    for j in range(0, len(tupla[i])):
-        #comprovar que no se repite
-        if j not in usados:
-            #agregar a la lista
-            resultado.append(tupla[i][j])
-            usados.add(j)
-    
-    # une los caaracteres
-    tupla[i] = ''.join(resultado)
-    '''
-    new_tupla = tuple(set(tupla[i], key=tupla[i].index))
-print(new_tupla)
+for i in valor:
+    #para que respete espacios entre palabras
+    if i == ' ' or i not in usats:
+        usats.add(i)
+        unics.append(i)
+
+tupla = tuple(unics)
+#convertir tupla en string
+str = ''.join(tupla)
+##convertir string en tupla separada por palabras (espacios)
+new_tup = tuple(str.split())
+print(new_tup)
