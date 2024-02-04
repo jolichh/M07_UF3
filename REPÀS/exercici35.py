@@ -19,7 +19,6 @@ def diccionariParaules(frase):
 
 # Solicitar una frase al usuario
 frase_usuario = input("Introdueix una frase >>> ")
-
 # Llamar a la función y mostrar el resultado
 resultado = diccionariParaules(frase_usuario)
 print(resultado)
