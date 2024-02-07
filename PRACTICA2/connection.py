@@ -9,7 +9,7 @@ conn = psycopg2.connect(
     port="5432"
 )
 
-# cursor() es el metode que fa la connexio
+# cursor() es el metode que fa la prova de connexio
 connection = conn.cursor()
 
 print(connection)
