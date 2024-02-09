@@ -1,6 +1,7 @@
 import psycopg2
 
 # dades per a connectar-se a la bbdd
+#def conectar_ddbb():
 conn = psycopg2.connect(
     database="postgres",
     user="postgresuser",
@@ -12,4 +13,4 @@ conn = psycopg2.connect(
 # cursor() es el metode que fa la prova de connexio
 connection = conn.cursor()
 
-print(connection)
+print("Estado de la conexión:",connection)
