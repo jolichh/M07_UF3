@@ -10,15 +10,16 @@ from delete import *
 x = input("Quieres ver una demo de como funciona el CRUD en la tabla de User? (y/n) >>> ")
 
 if x == 'y':
-    # crear tabla
     try:
-
         #demos que funcionan de prueba, no necesitan parametros
         crear_tabla()
         insert_demo()
         get_all()
         update_demo()
         delete_demo()
+
+    except (Exception, psycopg2.Error) as error:
+        print("ERROR:", error)
 
     finally:
         connection.close()

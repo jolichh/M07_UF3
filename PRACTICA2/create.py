@@ -16,13 +16,13 @@ def insert_demo():
     sql = '''
             INSERT INTO USERS (user_name, user_surname, user_age, user_email)
             VALUES ('demo1_name', 'Lopx', 23, 'jhon@doe.com')
-            RETURNING user_id
+            RETURNING user_id;
     '''
     connection.execute(sql)
 
-    user_id = connection.fetchone([0]) # type: ignore
+    user_id = connection.fetchone()
     conn.commit()
 
-    print()
+    print("Usuari creat amb id:", user_id)
 
-insert_demo()
+#insert_demo()
