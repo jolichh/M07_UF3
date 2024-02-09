@@ -11,12 +11,12 @@ def delete_user(user_id):
 
 # funcion demostrativa sin recibir parametros
 def delete_demo():
-    delete_query = "DELETE FROM USERS WHERE user_id = 2;"
+    delete_query = "DELETE FROM USERS WHERE user_id = 16;"
     #delete_query = "DELETE FROM USERS;"
     connection.execute(delete_query)
 
     conn.commit()
 
-    print("Eliminado usuario con id: 1")
+    print("Eliminado usuario con id: 16")
     
-#delete_demo()
+delete_demo()
