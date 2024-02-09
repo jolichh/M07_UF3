@@ -13,4 +13,4 @@ conn = psycopg2.connect(
 # cursor() es el metode que fa la prova de connexio
 connection = conn.cursor()
 
-print("Estado de la conexión:",connection)
+print("Estado de la conexión database:",connection)

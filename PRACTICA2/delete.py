@@ -19,4 +19,4 @@ def delete_demo():
 
     print("Eliminado usuario con id: 16")
     
-delete_demo()
+#delete_demo()

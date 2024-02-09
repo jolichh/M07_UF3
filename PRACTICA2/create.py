@@ -25,4 +25,4 @@ def insert_demo():
 
     print("Usuari creat amb id:", user_id)
 
-insert_demo()
+#insert_demo()
