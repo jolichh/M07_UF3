@@ -28,4 +28,4 @@ def get_all():
 
 
 #prueba 
-get_all()
+#get_all()
